@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== UNICONS ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Portfolio - Pierre Jenny</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">pi<span>e</span>rre</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link">Accueil</a></li>
+                    
+                    <li><a href="#about" class="nav__link">À propos</a></li>
+
+                    <li><a href="#services" class="nav__link">Veille Technologique</a></li>
+
+                    <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ui uil-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__socials">
+                <a href="https://github.com/Adrhaine/" target="_blank" 
+                class="nav__social-link">
+                    <i class="uil uil-github"></i>
+                </a>
+
+                <a href="https://x.com/adren4lynne" target="_blank" 
+                class="nav__social-link">
+                    <i class="uil uil-twitter"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/pierre-jenny-3aaa14299/" target="_blank" 
+                class="nav__social-link">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+
+                <a href="https://www.instagram.com/pierrejny/" target="_blank" 
+                class="nav__social-link">
+                    <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+
+            <div class="nav__btns">
+                <a href="#contact" class="nav__link-btn btn">Parlons</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+            <div class="home__content">
+                <span class="home__subtitle">Bienvenue sur mon Portfolio.</span>
+                <h1 class="home__title">Bonjour, je suis Pierre Jenny, je suis en<span> BTS SIO.</span></h1>
+            </div>
+
+            <img src="assets/img/home.jpg" alt="" class="home__img">
+        </div>
+      </section>
+
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+            <img src="assets/img/about.jpg" alt="" class="about__img">
+
+            <div class="about__content">
+                <h2 class="section__title">À propos</h2>
+
+                <p class="about__description">Je suis un développeur passionné, actuellement en BTS SIO, spécialité SLAM.  
+                    J’ai acquis des compétences solides dans le développement d’applications web et mobiles,  
+                    en particulier avec des technologies comme PHP, Symfony, Java et Flutter.  
+                    
+                    Ma curiosité et mon envie de toujours apprendre me poussent à explorer de nouvelles solutions techniques,  
+                    tout en mettant un point d'honneur à produire un code propre, maintenable et performant.  
+                    Mon objectif est de créer des applications innovantes qui répondent aux besoins des utilisateurs de manière efficace et intuitive.
+                </p>
+
+                <div class="tabs__btns">
+                    <span class="tabs__btn tab__active" data-target="#skills">Compétences</span>
+                    <span class="tabs__btn" data-target="#award">Outils</span>
+                    <span class="tabs__btn" data-target="#experience">Expériences</span>
+                    <span class="tabs__btn" data-target="#education">Diplômes</span>
+                </div>
+
+                <div class="tabs__content">
+                    <div class="tabs__item tab__active" data-content id="skills">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Développement Web</span> - HTML / CSS / JS / PHP 
+                                <span>Apprentissage lors du BTS SIO.</span>
+                            </p>
+
+                            <p class="tabs__description">
+                                <span>Développement</span> - JAVA / FLUTTER
+                                <span>Développement d'application</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tabs__item" data-content id="award">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Outils Développement</span> - GIT / GITHUB / VISUAL STUDIO CODE
+                                <span>Outils permettant de sauvegarder le travail.</span>
+                            </p>
+
+                            <p class="tabs__description">
+                                <span>Outils développement</span> - DOCKER / COMPOSER
+                                <span>Outils permettant de sauvegarder le travail.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tabs__item" data-content id="experience">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Stage 1ère année BTS SIO</span> - ASP Limoges
+                                <span>2024</span>
+                            </p>
+
+                            <p class="tabs__description">
+                                <span>Stage 2ème année BTS SIO</span> - La Poste Limoges
+                                <span>2025</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tabs__item" data-content id="education">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Baccalauréat</span> - Lycée Turgot Limoges 
+                                <span>2023</span>
+                            </p>
+
+                            <p class="tabs__description">
+                                <span>Permis B</span> - Conduite
+                                <span>2024</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </section>
+
+      <!--=============== VEILLE ===============-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Ma veille technologique</h2>
+        <p class="section__description">La veille technologique est essentielle pour rester à jour dans un domaine en constante évolution comme le développement logiciel.  
+            Je me tiens informé des dernières versions de frameworks, des nouvelles pratiques de développement, et des innovations en matière de technologies, telles que l’intelligence artificielle et le cloud computing.  
+            
+            Cette démarche me permet d’adopter les outils les plus pertinents et de proposer des solutions modernes et efficaces,  
+            tout en garantissant la sécurité et la pérennité des applications que je développe.
+        </p>
+
+        <div class="services__container container grid">
+            <div class="services__item">
+                <i class="uil uil-arrow services__icon"></i>
+
+                <h3 class="services__title">OPEN AI</h3>
+                <p class="services__description">Je suis abonné aux mises à jour d’OpenAI pour suivre l’évolution des modèles IA et les nouvelles API. Cela me permet de rester à jour sur les dernières innovations en IA.</p>
+            </div>
+
+            <div class="services__item">
+                <i class="uil uil-search-alt services__icon"></i>
+
+                <h3 class="services__title">GOOGLE ALERTS</h3>
+                <p class="services__description">J’utilise Google Alerts pour suivre les sujets spécifiques comme les frameworks et les tendances du développement. Cela m’informe instantanément sur les nouvelles pertinentes.</p>
+            </div>
+
+            <div class="services__item">
+                <i class="uil uil-chat-bubble-user services__icon"></i>
+
+                <h3 class="services__title">LINKEDIN</h3>
+                <p class="services__description">Sur LinkedIn, je suis des experts et des entreprises du secteur technologique pour suivre les discussions et les tendances. Cela m’aide à m’impliquer dans la communauté.</p>
+            </div>
+
+            <div class="services__item">
+                <i class="uil uil-cloud services__icon"></i>
+
+                <h3 class="services__title">ANSSI</h3>
+                <p class="services__description">Je consulte les publications de l’ANSSI pour suivre les bonnes pratiques de cybersécurité et les alertes sur les vulnérabilités. Cela me permet de garantir la sécurité de mes projets.</p>
+            </div>
+
+            <div class="services__item">
+                <i class="uil uil-bug services__icon"></i>
+
+                <h3 class="services__title">CNIL</h3>
+                <p class="services__description">Je suis les actualités de la CNIL pour assurer la conformité avec le RGPD et respecter la protection des données. Cela m’aide à développer des applications respectueuses de la vie privée.</p>
+            </div>
+
+            <div class="services__item">
+                <i class="uil uil-rss-interface services__icon"></i>
+
+                <h3 class="services__title">FLUX RSS</h3>
+                <p class="services__description">J’utilise des flux RSS pour centraliser les informations des blogs et sites technologiques. Cela me permet de suivre efficacement l’actualité sans perdre de temps.</p>
+            </div>
+        </div>
+        
+      </section>
+
+      <!--=============== PORTFOLIO ===============-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Mes derniers Projets</h2>
+        <p class="section__description">Mon portfolio présente une sélection de projets réalisés dans le cadre de mes études et de mes expériences professionnelles.  
+            Chaque projet reflète mes compétences en développement, que ce soit en PHP, Symfony, Flutter ou Java.  
+        
+            Je mets un point d’honneur à proposer des solutions techniques innovantes et adaptées aux besoins des utilisateurs,  
+            tout en garantissant des performances optimales et une expérience utilisateur fluide.  
+            Découvrez mes réalisations et mes contributions à des projets variés.</p>
+
+        <div class="portfolio__container container grid">
+            <div class="portfolio__item">
+                <a href="assets/projets/resto.html">
+                    <img src="assets/img/portfolio-1.jpg" alt="" class="portfolio__img" />
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">Développement</p>
+                        <h3 class="portfolio__title">Projet Resto</h3>
+                        <p class="portfolio__description">Voici un projet restaurant réalisé en 1ère année utilisant le MVC.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="portfolio__item">
+                <a href="assets/projets/bibliotheque.html">
+                    <img src="assets/img/portfolio-2.jpg" alt="" class="portfolio__img" />
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">Développement</p>
+                        <h3 class="portfolio__title">Bibliothèque</h3>
+                        <p class="portfolio__description">Voici un projet réalisé avec Flutter sur une application pour une bibliothèque.</p>
+                    </div>
+                </a>
+            </div>
+            
+
+            <div class="portfolio__item">
+                <a href="assets/projets/seminaire.html">
+                    <img src="assets/img/portfolio-3.jpg" alt="" class="portfolio__img" />
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">Développement</p>
+                        <h3 class="portfolio__title">Projet Séminaire</h3>
+                        <p class="portfolio__description">C'est un projet appelant une API et en l'utilisant</p>
+                    </div>
+                </a>
+            </div>
+            
+            
+
+            <div class="portfolio__item">
+                <a href="assets/projets/congres.html">
+                    <img src="assets/img/portfolio-4.jpg" alt="" class="portfolio__img" />
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">Développement</p>
+                        <h3 class="portfolio__title">Congrès</h3>
+                        <p class="portfolio__description">Voici un projet d'un Congrès réalisé en 2ème année utilisant le MVC et les class.</p>
+                    </div>
+                </a>
+            </div>
+            
+
+            <div class="portfolio__item">
+                <a href="assets/projets/jardinier.html">
+                    <img src="assets/img/portfolio-5.jpg" alt="" class="portfolio__img" />
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">Développement</p>
+                        <h3 class="portfolio__title">Jardinier</h3>
+                        <p class="portfolio__description">Voici un projet jardinier réalisé en 2ème année utilisant Symfony.</p>
+                    </div>
+                </a>
+            </div>
+            
+
+            <div class="portfolio__item">
+                <a href="assets/projets/stage1.html">
+                    <img src="assets/img/portfolio-6.jpg" alt="" class="portfolio__img" />
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">Stage</p>
+                        <h3 class="portfolio__title">Stage 1ère année</h3>
+                        <p class="portfolio__description">Stage réalisé à l'ASP Limoges.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+      </section>
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+            <div class="contact__content">
+                <h2 class="section__title">Contactez-moi</h2>
+
+                <p class="contact__description">Je suis disponible pour toutes demandes. 
+                    Merci de me contacter par mail : <a href="mailto:pierrejenny.1602@gmail.com">pierrejenny.1602@gmail.com</a>
+                </p>
+
+                <form class="contact__form" id="contact-form">
+                    <div class="contact__form-input">
+                        <input type="text" name="name" placeholder="Votre nom *" class="contact__input" id="contact-name">
+                    </div>
+
+                    <div class="contact__form-input">
+                        <input type="email" name="email" placeholder="Votre e-mail" class="contact__input" id="contact-email">
+                    </div>
+
+                    <div class="contact__form-input">
+                        <input type="text" name="subject" placeholder="Ecrivez votre sujet" class="contact__input" id="contact-subject">
+                    </div>
+
+                    <div class="contact__form-input">
+                        <textarea name="message" id="contact-message" class="contact__input textarea" placeholder="Votre message"></textarea>
+                    </div>
+
+                    <input type="submit" value="Submit" class="btn" />
+
+                    <p class="error__message" id="error-message"></p>
+                </form>
+            </div>
+
+            <img src="assets/img/contact.jpg" alt="" class="contact__img">
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <a href="index.html" class="footer__logo">pi<span>e</span>rre</a>
+
+            <div class="footer__socials">
+                <a href="https://github.com/Adrhaine/" target="_blank" 
+                class="footer__social-link">
+                    <i class="uil uil-github"></i>
+                </a>
+
+                <a href="https://x.com/adren4lynne" target="_blank" 
+                class="footer__social-link">
+                    <i class="uil uil-twitter"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/pierre-jenny-3aaa14299/" target="_blank" 
+                class="footer__social-link">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+
+                <a href="https://www.instagram.com/pierrejny/" target="_blank" 
+                class="footer__social-link">
+                    <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+
+            <p class="footer__copyright"> &copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-angle-up scrollup__icon"></i>
+    </a>
+
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
