@@ -21,6 +21,13 @@
 
         <p><strong>Technologies utilisées :</strong> Visual Studio Code</p>
 
+        <div class="video-container">
+            <video id="demo-video" controls>
+                <source src="../videos/Seminaire.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture des vidéos HTML5.
+            </video>
+        </div>
+
         <div class="button-container">
             <a href="https://github.com/Adrhaine/Seminaire_mvc" target="_blank" class="github">
                 <i class="uil uil-github"></i>
@@ -29,5 +36,12 @@
             <a href="../../index.html#portfolio">Retour</a>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('demo-video');
+            video.playbackRate = 1.5; // Définit la vitesse de lecture à 1,5x
+        });
+    </script>
 </body>
 </html>

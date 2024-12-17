@@ -45,3 +45,17 @@ p, li {
     background-color: hsl(350, 95%, 57%);
 }
 
+/* Style spécifique pour la vidéo */
+.video-container {
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden; /* Pour éviter les débordements */
+}
+
+video {
+    width: 100%;         /* La vidéo prend toute la largeur disponible */
+    max-width: 700px;    /* Taille maximale de la vidéo : 700px */
+    height: auto;        /* La hauteur s'ajuste automatiquement */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
